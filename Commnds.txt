@@ -1,41 +1,80 @@
 ############################################
-// Files Directory Commands
-
+  // Files Directory Commands
 ls
 cd
-pwd [Now where are you ]
-mv [for move and Rename Files]
-cp [-r For Directory] [-v]
-mkdir [creat Directory]
-rm [-r for Directory][-i ask your qusetion for Del or non Del]
+pwd   //[Now where are you ]
+mv    //[for move and Rename Files]
+cp    //[-r For Directory] [-v]
+mkdir //[creat Directory]
+rm    //[-r for Directory][-i ask your qusetion for Del or non Del]
+cat   //[open File]
+touch //create file
 
-// back to Home use
+  // back to Home use
 ~
-
-// show File type
+  // show File type
 file 'file name'
-
 ############################################
-// Compail And Run C++ Apps
-
+  //System Log Files
+  //First Switch Root user
+su Root
+  //open Syslog File
+/var/log/Syslog
+############################################
+// use more and less for show page more than 1 page in part to part
+// [pipe comand | ] // output of last commnad -> input of another command
+// [output] | [input]
+cat /var/log/syslog | more
+cat /var/log/syslog | less
+############################################
+  //user head and tail for see up or down list
+cat /var/log/syslog | head // [you can see 10 first line of this file]
+cat /var/log/syslog | tail // [you can see 10 last line of this file]
+  // and you can use the options for this commnad
+[-n // for choice your line number to show you]
+///////////////////////////////////////////////////////////////////////
+  // for delete first line
+cat /var/log/syslog | tail -n +2 //[file run in line 2]
+  //for delete last line
+cat /var/log/syslog | head -n -1
+############################################
+  // Compail And Run C++ Apps
 g++ "App name" -o "name of Compile app"
-
-// To run app you can use the Steps // without []
-
+  // To run app you can use the Steps // without []
 ./[app name]
 bash [app name]
 sh [app name]
-
 ############################################
-
-// Wilde Cards
-// you can use WildeCrads For serach in Dics and Files
-
+  // Wilde Cards
+  // you can use WildeCrads For serach in Dics and Files
 ls *
 ls *.*
 ls *?.*  // [?] use for one chracter
 ls *.{dat,txt}
 ls [!a]*
 ls [abc][abc][abc]
-
-###########################################
+############################################
+  //compare two file
+cmp
+diff
+comm
+uniq    // for delete duplicate in Files
+strings // show readable charcter in Files
+join    // match tow file
+part    // part of big files to lower Files
+cut     // for split a record of file
+sort
+wc      // show line number of files
+#############################################
+  //create inode
+ln 'file name' 'inode name'     // HardLink create
+ln -s 'file name' 'inode name' // soft link create [shortcut]
+#############################################
+  // for serach in Files you can use Find Command
+find -type f -iname 'any name you want to serach'
+  // for copy mv or any command you can use the [exec or ok] command with Find
+find -type f -iname '*music.mp3' -exec mv ~/Desktop {} \;
+  // and another works
+find -amin +10           //[find all Files accessed N min ]
+find -anewer 'file name' //[find all files accessed more recently than file]
+find -atime +1           //[]
