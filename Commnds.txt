@@ -70,11 +70,43 @@ wc      // show line number of files
 ln 'file name' 'inode name'     // HardLink create
 ln -s 'file name' 'inode name' // soft link create [shortcut]
 #############################################
+  //find with locate
+locate 'music' // find any file name as music in pc
+  //for update database of locate you want to swicth root user and type a Command
+updatedb //[ as root ]
   // for serach in Files you can use Find Command
 find -type f -iname 'any name you want to serach'
   // for copy mv or any command you can use the [exec or ok] command with Find
 find -type f -iname '*music.mp3' -exec mv ~/Desktop {} \;
+  // use and or for more result
+find -type f -iname '*music.mp3*' -a -iname '*video.mp4*'
+find -type f -iname '*music.mp3*' -o -iname '*video.mp4*'
+  //find hidden files
+find -type f -iname ".*"
   // and another works
 find -amin +10           //[find all Files accessed N min ]
 find -anewer 'file name' //[find all files accessed more recently than file]
-find -atime +1           //[]
+find -atime +1           //[ , , , , ,  , , , , by time + or -]
+find -cnewer
+find -ctime              //[find all files created + or - min N]
+find -mmin               //[last modify Files N min Ago + or -]
+find -mtime              //[last modify files N day Ago + or -]
+find -empty
+find -size [+-N]
+find -type               //[find type search File f or Directory d]
+find -empty - delete
+find -prune              //[dont go in Directory]
+
+################################################
+  // source of commnads
+whereis 'commnad name' //[ full path ]
+which 'coammnad'
+  // use man page for about of a Command
+man 'commnad name'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // Programming in shell Script
+echo 'hello world' // [ show result ]
+  // create function
+dispalyInfo(){ echo "$(cal)";$(date)} // first write function in shell
+  // then type name of function
+dispalyInfo
