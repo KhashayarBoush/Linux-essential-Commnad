@@ -1,0 +1,41 @@
+############################################
+// Files Directory Commands
+
+ls
+cd
+pwd [Now where are you ]
+mv [for move and Rename Files]
+cp [-r For Directory] [-v]
+mkdir [creat Directory]
+rm [-r for Directory][-i ask your qusetion for Del or non Del]
+
+// back to Home use
+~
+
+// show File type
+file 'file name'
+
+############################################
+// Compail And Run C++ Apps
+
+g++ "App name" -o "name of Compile app"
+
+// To run app you can use the Steps // without []
+
+./[app name]
+bash [app name]
+sh [app name]
+
+############################################
+
+// Wilde Cards
+// you can use WildeCrads For serach in Dics and Files
+
+ls *
+ls *.*
+ls *?.*  // [?] use for one chracter
+ls *.{dat,txt}
+ls [!a]*
+ls [abc][abc][abc]
+
+###########################################
