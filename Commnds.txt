@@ -110,3 +110,46 @@ echo 'hello world' // [ show result ]
 dispalyInfo(){ echo "$(cal)";$(date)} // first write function in shell
   // then type name of function
 dispalyInfo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // use allias for briefing
+  // user the bashrc file for remember allias Files
+  // /home/.bahsrc
+alias [ alias name ]="commnd"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // history you type
+history // [ -w for save ] [ -r for recover ] [ -c for delete history ]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // use a text Editor exam Vim for cat the Files
+apt-get install Vim
+vim /var/log/syslog // open and edit file with Vim
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ //use a command for know him self
+whoami
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //password chnange
+passwd
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //know about of your os and kernel
+uanme -a
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //know about users now work in  System
+who
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // for reamote and accesse to other server use ssh
+ssh example@[ip]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // use apropos for search in describ man pages for a letter or Command
+apropos [Command]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // use top for system monitor as task manager
+top -aux
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // chmod and permission
+chmod 777 all users can be write - read - Edit
+chmod 755
+  // for know about this type "permission linux in google search"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //prompt Edit
+  // type in shell
+$PS1=[ " type your commnd " \w \u \d \h]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
