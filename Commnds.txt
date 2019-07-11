@@ -143,6 +143,8 @@ apropos [Command]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   // use top for system monitor as task manager
 top -aux
+ps $$
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   // chmod and permission
 chmod 777 all users can be write - read - Edit
@@ -153,3 +155,33 @@ chmod 755
   // type in shell
 $PS1=[ " type your commnd " \w \u \d \h]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //Env variables [ you cant chnange this variables ]
+  // for show list you can write evn in shell
+evn
+ // you can change the path Directory with this Command
+echo $PATH
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  // for write output new file
+use [ < ]
+exam :
+ cat [file name] > [new file .txt]
+
+ // choice input
+use [ >> ]
+exam :
+  wc -l >> EOF
+first line
+two line
+three line
+EOF //then log out of commnd
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  //costum your commnd
+/etc/profile
+/etc/bashrc
+~/.bashrc
+~/.profile
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  //know about your shell
+echo $0
+echo $shell
+cat /etc/shells
