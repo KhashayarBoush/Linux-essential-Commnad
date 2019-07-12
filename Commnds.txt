@@ -262,3 +262,17 @@ sed // use for edit / replace / read and any more works
 cat /var/Log/syslog | AWK 'BEGIN{ start action } { action } END { Stop action }'
 
 --------------------------------------------------------------
+  // help for Usage Hard Disk
+df -h
+  // cpu info
+cat /proc/cpuinfo | less
+cat /proc/cpuinfo | less |egrep -i "^processor$"
+lscpu
+  // memory info
+cat /proc/meminfo | less
+free -m
+vmstat -s
+_____________________________________________________
+  //taskmanger and show runing process
+ps -aux
+___________________________________________________
