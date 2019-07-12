@@ -325,3 +325,18 @@ tarcepath test.com
 su Root
 tcdump -A -i [ interface network] // for find interface use this commnad
 ifconfig
+
+###################################################
+
+  // add user
+useradd -m test -c [ 'about of usr ' ]
+  // delete users
+userdel -r [ username ]
+  // change user about
+usermod -c [ new change ] [ username ]
+  // group add
+groupadd [ name ]
+  // see changes
+tail -n 2 /etc/group
+  // add groups to add another groups
+usermod -a -G edu test
