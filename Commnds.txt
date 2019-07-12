@@ -340,3 +340,8 @@ groupadd [ name ]
 tail -n 2 /etc/group
   // add groups to add another groups
 usermod -a -G edu test
+#################################################
+  //iso mount file
+sudo mkdir /media/iso
+sudo mount -o loop -t iso9660 /path/to/file.iso /media/iso
+sudo unmount /media/iso
