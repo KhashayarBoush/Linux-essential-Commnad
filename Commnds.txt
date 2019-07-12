@@ -276,3 +276,37 @@ _____________________________________________________
   //taskmanger and show runing process
 ps -aux
 ___________________________________________________
+  //for use Emacs textEditor
+  // first install Emacs
+  // open files
+exam :
+  emacs File.text -nw
+  ___________________________________________________
+    // find a character or text in file use Regular Exprissions
+    // -w macth with Command
+    egrep // use a command
+
+    +
+    ?
+    *
+    .
+___________________________________________________
+  // kill a process
+  // first Find process id with ps
+  // then
+kill -9 [ process id ]
+___________________________________________________
+  // file compression
+  // for Gzip use
+gzip [ file name ]
+  // unGzip
+gunzip [ file name ]
+  // tar file compression
+  // create tar archive
+tar -cfv[ tar file name.tar] [ file location ]
+  // if you want to Gzip
+tar -cfvz [ tar file name .tar.gz] [ file location ]
+  // for bz2
+tar -cfvj [ tar file name.tar.bz2 ] [file location]
+  // untar
+tar -xvf [ tar file name ] 
