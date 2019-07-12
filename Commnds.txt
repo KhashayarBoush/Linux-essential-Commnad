@@ -309,4 +309,19 @@ tar -cfvz [ tar file name .tar.gz] [ file location ]
   // for bz2
 tar -cfvj [ tar file name.tar.bz2 ] [file location]
   // untar
-tar -xvf [ tar file name ] 
+tar -xvf [ tar file name ]
+##################################################
+  // find ip with net-tools
+nslookup test.com
+  // or use wireshark app to see send or recive packets
+  // install wireshark
+  // download a file or recursiver
+wget -drc test.com
+  // or
+wget url.mp3
+  // for find packet in network
+tarcepath test.com
+  // use tc dump for analyzer
+su Root
+tcdump -A -i [ interface network] // for find interface use this commnad
+ifconfig
