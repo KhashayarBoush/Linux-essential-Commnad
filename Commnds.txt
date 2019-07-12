@@ -185,3 +185,80 @@ EOF //then log out of commnd
 echo $0
 echo $shell
 cat /etc/shells
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //save variable in env variables
+declare -rx [ var name ] = [] //read only
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ // sum in variables
+a=5
+b=5
+c=$((a+b))
+echo $c
+  // or use let
+let c=a+5
+echo $C
+  // shift left or shift right
+y=5
+let y=$((y<<2))
+echo $y
+  // also you can uase ++ and -- in mathmatic
+  // use expr
+example :
+name='Test'
+expr length "$name"
+---
+expr substr "$name" 2 2
+  output : se
+  //also you can move output to another variable
+out=expr substre "$name" 2 2
+echo $out
+---
+expr index "$name" es
+___________________________________________________
+
+  // shell programing
+  // for call app use
+$0 // in echo
+  exam :
+echo "hello $0"
+  // for input use
+echo "hello $1 $2 $2"
+  //and for give any input user
+echo "hello $@"
+  // give input from user
+read -p " insert your num : " number
+echo $number
+  // use -p for give [ string ]
+  // use -t for set timer [ 5s ]
+  // another way for give input
+echo " inset your name "
+read name
+echo $name
+------------------------------------------------------
+  //structure of For and If oprations
+
+for (( i=0 ; i < 1 ; i++ ))
+do
+  echo "TEST"
+done
+  // if
+if [ a == "Test" ]
+then
+  echo "true"
+else
+  echo "False"
+fi
+-------------------------------------------------------------
+  // set Sticky Bit
+chmod 1777
+-------------------------------------------------------------
+ //editing Text files use this tools
+
+awk // powerfull for edit and use for any editing
+tr  // replace any charcter
+sed // use for edit / replace / read and any more works
+
+  // exam of awk
+cat /var/Log/syslog | AWK 'BEGIN{ start action } { action } END { Stop action }'
+
+--------------------------------------------------------------
