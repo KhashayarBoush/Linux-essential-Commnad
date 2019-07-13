@@ -345,3 +345,7 @@ usermod -a -G edu test
 sudo mkdir /media/iso
 sudo mount -o loop -t iso9660 /path/to/file.iso /media/iso
 sudo unmount /media/iso
+#################################################
+  // create 12 charcter Random number
+od -vAn -tu4 -N4 /dev/urandom
+  // od for showen octals number
