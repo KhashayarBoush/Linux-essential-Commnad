@@ -385,3 +385,35 @@ sleep 2
  // use dd comand or install dcfldd for give backup or copy
  // or any work with dd Command
 dcfldd if= [] of= [] status=progress bs=1024
+####################################################
+  // first install this package in cent-os-7
+yum install epel-release -y
+  // and then install this packages
+yum install pv rsync git nc wget linx wget links aria2c nmap net-tools bind-utils
+telnet axel -y
+  // and install top ;ike programs
+yum install htop iotop iftop -y
+  // and install some other apps
+yum install bc screen lsof -y
+####################################################
+  // net tools
+nslookup
+telnet wondercode.ir 80
+route
+dig
+##################################################
+  // show usage in mem , cpu , kernel and system core
+xload // graphical
+tload // show in terminal
+##################################################
+  // kill process and send siganls for any process
+  // creat process use
+  // show all siganl commnd
+kill -l
+xlogo &
+kill [siganl][option]
+kill -INT [ process code ] // ctrl + c
+###################################################
+  // add PATH to run scripts
+PATH=~/[foldername]:$PATH
+####################################################
