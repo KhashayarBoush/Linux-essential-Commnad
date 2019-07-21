@@ -349,3 +349,39 @@ sudo unmount /media/iso
   // create 12 charcter Random number
 od -vAn -tu4 -N4 /dev/urandom
   // od for showen octals number
+###############################################
+  // delet ?Hashtag and Space
+egrep -v '#|^$'
+  // show time in copy
+time cp ~/home /tmp
+##################################################
+  //uptime command for show usage and uptime sysytem
+uptime
+  // hostname show your linux hostname
+hostname
+  // for show your os information use
+uname -a
+  // show red hat release use
+cat /etc/redhat-release
+  // for show free mem info use
+free -mh
+  // aviable disk space
+df -h
+  // how much space in curent Directory
+du -h
+du -h --max depth=1 // show usage of Directory
+  // show curent users login system
+users
+  // name of now login
+whoami
+  // shwo date
+date
+date +%s // unix time base
+  // calander
+cal
+  // sleep shell pause shell
+sleep 2
+####################################################
+ // use dd comand or install dcfldd for give backup or copy
+ // or any work with dd Command
+dcfldd if= [] of= [] status=progress bs=1024
