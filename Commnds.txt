@@ -417,3 +417,10 @@ kill -INT [ process code ] // ctrl + c
   // add PATH to run scripts
 PATH=~/[foldername]:$PATH
 ####################################################
+  // use this comand for print all of numbers
+echo {n .. n}
+  // or '
+seq 1 20
+  // Or use For conditional
+for count in 1234
+echo $count
