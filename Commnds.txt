@@ -424,3 +424,30 @@ seq 1 20
   // Or use For conditional
 for count in 1234
 echo $count
+####################################################
+  // for change file name with For loop
+for file in ~/[folder name]/[*.txt]
+do
+mv $file ~/[folder name ]/$(basename $file .txt).doc
+done
+###################################################
+  //wget options
+wget [link]                     // use for standard download
+wget -O [new file name ][link]  // use for change file iname
+wget -p [new locate][link]      // use for set location
+wget --limt-rate=300k [link]    // use for limit speed
+wget -c [link]                  // use for resume of paused downloaded file
+wget -b [link]                  // use for download in background
+wget -tries=100 [link]          // how much redownload if conctions closed
+  // for downlod N file for download
+  // first make a text file with files links
+  // and use wget for downlaod file
+wget -i [ text file name ]
+  // for download FTP files
+wget --ftp-user=[username] --ftp-password=[passwd] ftp://[url]
+  // for full site download and see offline
+wget --mirror --convert-links --page-requisites --no-parent -P [file location][link]
+######################################################
+  // use rsync for copy - move between local and remote system
+rsync -zhv [select files ] [location for copy] // non Directory copyid
+rsync -azhv // copy with Directory
