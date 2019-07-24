@@ -451,3 +451,29 @@ wget --mirror --convert-links --page-requisites --no-parent -P [file location][l
   // use rsync for copy - move between local and remote system
 rsync -zhv [select files ] [location for copy] // non Directory copyid
 rsync -azhv // copy with Directory
+rsync -avz [file] root@[ip]:[file location to copy] // copy in server
+rsync -avzhe ssh root@[IP]:[file location] [home location in local] // with ssh protcol server -> local
+rsync -azvhe [file location in local] ssh [user]@[ip]:[file location] // with ssh protcol local -> server
+  // use --progress for show satus of file
+  // use -- include for choice files
+  // use --exclude for unchoice Files
+rsync -azvhe ssh --include '*R' --exclude '*' [user]@[ip]:[file] [local location]
+  // use --max-size for set files size to copy
+rsync -ahvze ssh --max-size='220k' [ssh file][local file]
+  // use --remove-source-files for delete origanl files
+rsyn --remove-source-files -zhv [file][file]
+  // use --dry-run for test copy or any use
+  // changs is not save in --dry-run
+rsync --dry-run --remove-source-files [file][file location]
+  // use --bwlimit set band with limit to copy
+rsync --bwlimit=100 -azhve ssh [user ssh file] [local fiel location]
+#######################################################
+  // use curl for download any file
+curl -o [link]
+curl -O [new file name] [link]
+curl -C - -O [ link ] // resume download
+xargs -n 1 curl -O < [text file location] //  use for multipal downlod Files
+curl -I [link] // get http hesadrs site
+curl --cookie-jar [text name to save cookie] [link] // download cookie
+curl --cookie [cookie file][link] // use the saved cookie in systems
+crul --limit-rate 100k [file link] // spped limit 
