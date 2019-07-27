@@ -476,4 +476,46 @@ xargs -n 1 curl -O < [text file location] //  use for multipal downlod Files
 curl -I [link] // get http hesadrs site
 curl --cookie-jar [text name to save cookie] [link] // download cookie
 curl --cookie [cookie file][link] // use the saved cookie in systems
-crul --limit-rate 100k [file link] // spped limit 
+crul --limit-rate 100k [file link] // spped limit
+##########################################################
+  // reset and format usb drive
+sudo unmount /dev/sdb1
+sudo mkfs.ntfs /dev/sdb1
+sudo mkfs.ext4 /dev/sdb1
+##########################################################
+ // write iso in flash drive
+sudo unmount /dev/sdb1
+sudo dd bs=4M if=[iso file location] of=[/dev/sdb1]
+#########################################################
+  // network+
+ip addr list
+ip route show
+hostnamectl status
+hostnamectl set-hostname Master.Centos7
+  // shwo FQDN files
+cat //hostname
+  // show host ip
+ cat /etc/resolv.conf
+  // show config files of network files
+cd /etc/sysconfig/network-scripts
+ls
+  // and you now see all network config files
+cat enp0s3
+  // and see Ethr config
+  // you can read doc file in
+less /usr/share/doc/initscripts-*/sysconfig.txt
+  // and search /ifcfg-
+  // read base item for learn about more of this section
+##########################################################
+  // show all packages installed in Centos7
+yum list installed
+  // for show update package
+yum check-update
+  // search in packages
+yum search music
+  // to remove package
+yum remove Vim
+  // show repository
+yum repolist
+  // install rpm repository
+yum install epel-release
