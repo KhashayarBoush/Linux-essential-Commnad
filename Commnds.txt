@@ -15,6 +15,9 @@ touch //create file
   // show File type
 file 'file name'
 ############################################
+  // copy file with scp in ssh protcol;
+scp [file in local] -P [port ssh] [user]@[ip]:{ server file loaction }
+############################################
   //System Log Files
   //First Switch Root user
 su Root
@@ -519,3 +522,59 @@ yum remove Vim
 yum repolist
   // install rpm repository
 yum install epel-release
+#########################################################
+  // install apache Web service to cento os
+yum install httpd -y
+  // after install httpd use this command for show and control system usage
+systemctl lisit-units // show all active srvice
+  // show all service files is runing
+systemctl list-units-files --type=service
+systemctl [Parameter] application.suffix
+ // parametr = stop or start server
+ // application = apache or mysql or ...
+ // suffix = socket or service or ...
+#########################################################
+  // some times we gives err massg in httpd service use this command
+journalctl -u httpd.service
+########################################################
+  // firewall config
+firewall-cmd --list-all // show now config in use whit system
+  // add servce exam http
+firewall-cmd --permanent --add-service http
+firewall-cmd --reload
+  // remove service
+firewall-cmd --permanent --remove-service http
+  // open and close port
+firewall-cmd --permanent --add-port=12345/tcp or 12345/udp
+###########################################################
+  // make randoum uuid
+head -c 16 /dev/urandm | xxd -ps
+#######################################################
+ // for change owenr of file
+chown [user]:[group] [file]
+###################################################
+  // work with git && github
+sudo apt-get install git-all
+git config --global user.name "..."
+git config --global user.email "..."
+  /  / for show all git config
+git config --list
+  // show git status for current Directory
+git status
+git init // for add current Directory to Git file
+git add [file name] // for add file to git
+git commit // for commit Files
+git remote add origion [ git repo Link ] //  for concet local to git and commit
+git pish origin master // for push files
+  // now type user and pass for conections
+git clone [ git repo Link ] // for download a repo for change or use
+git log --stat // show chnages in repository
+git diff // compare
+git rm // delete
+git mv // rename or move files
+git checkout // delete all chnages before push or add or upload file
+git reset HEAD [file name] //recover file after add commit
+  // for show all changes in one line
+git log --pretty=oneline
+  // for undo a commit file use
+git commit --amend // beafor upload in repos
