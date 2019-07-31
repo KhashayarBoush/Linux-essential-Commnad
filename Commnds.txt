@@ -1,4 +1,4 @@
-############################################
+ ############################################
   // Files Directory Commands
 ls
 cd
@@ -565,7 +565,7 @@ git init // for add current Directory to Git file
 git add [file name] // for add file to git
 git commit // for commit Files
 git remote add origion [ git repo Link ] //  for concet local to git and commit
-git pish origin master // for push files
+git push origin master // for push files
   // now type user and pass for conections
 git clone [ git repo Link ] // for download a repo for change or use
 git log --stat // show chnages in repository
@@ -578,3 +578,54 @@ git reset HEAD [file name] //recover file after add commit
 git log --pretty=oneline
   // for undo a commit file use
 git commit --amend // beafor upload in repos
+#############################################################
+
+  // all remote git oprations
+git remote -v
+git remote add [short name ] [url]
+
+--> git remote fetch [remote name]    |
+|                                     | --- > git pull
+--> git remote merge [ remote name ]  |
+
+git push [reamote name][branch name]
+git remote show [remote name]
+git remote reanme [old-name][new-name]
+
+###########################################################
+  // tag mange in git
+git tag // show now tags
+git tag -l [patern name] // serach in tags
+git tag -a [tag name] -m "massgae" // create tag with new massage
+git show [tag name] // show chnges in commits and tag
+git tag [tag name] // without tag massage
+----> // To compelet all do things We need to push
+git push origin [tag name]
+  // for push multipale tags
+git push --tags
+  // for remove tag
+git tag -d [tag name ]
+
+#########################################################
+---> git branch
+  // use branche for create a copy of master repo for update or
+  // anything we need to do
+  // after that we merge this branch with master repo
+---> for create new branch use as this commnads
+___________________________________________________
+  // show all branchs
+git branch
+git branch -v // full review
+git --merged // show branch merged with master
+git --no-merged
+__________________________________________________
+git branch [new branch name ] // create new branch  <---
+                                    |   git checkout -b [branch name]
+git checkout [branch name] // switch to branch      <---
+  // delete branch
+git branch -d [branch name] // delete in local
+  // if you can't use a branch
+git branch -D [branch name ]
+---------------------------------
+  // for delete a branch after uploud that
+git push origin --delete [branch name]
