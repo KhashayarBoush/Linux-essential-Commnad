@@ -610,7 +610,7 @@ git tag -d [tag name ]
 ---> git branch
   // use branche for create a copy of master repo for update or
   // anything we need to do
-  // after that we merge this branch with master repo
+  // after that we merge this branch with master repo --> git push origin [branch name]
 ---> for create new branch use as this commnads
 ___________________________________________________
   // show all branchs
