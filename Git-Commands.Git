@@ -1,0 +1,59 @@
+# Git Learn 
+
+Step 1 : 
+	-> git init
+
+Step 2 : 
+	-> git add
+
+Step 3 : 
+	-> git commit - m " [ massage ] "
+
+Step 4 : 
+	// show Log Files and Read Commits
+	-> git log
+
+Step 5 :
+ 	// show Changes in Projects
+	-> git diff HEAD
+	// when you add A git file you can See changes in Stage Level
+	-> git diff --staged -> now you can see Chanes in Staged Level . 
+
+Step 6 : 
+	// if you Want close File in staged Mode For Cancel to commit and add
+	-> git reset [ file name ]
+	// now , no file in there for commit
+
+Step 7 : 
+	// if you wnat to Really close File and cant show File in Status
+	// and Recover to Privus File 
+	-> git checkout -- [ file name ]
+	// now , file delete in commit and stage and add MOOD and returned to privus 		Version Or Returned To last Commit . 
+
+Step 8 : 
+	// Add A branch in Repositpory -----|->\ as tree 
+	-> git branch // show branchs
+	-> gir branch [ branch name ] 
+	// For change Branch 
+	-> git checkout [ branch name ] 
+
+Step 9 : 
+	// switch To master  -> git checkou master
+	-> git merg [ branch name ] 
+	// when A branch Link to Master You Want to Delete them
+	-> gir branch -d [ branch name ]	
+
+Step 10 : 
+	// if you want to Delete a File 
+	git rm [ file name ]
+------------------------------------------------------------------
+# Remote
+
+	// for get a repo in git hub
+	-> git clone [ repo addr ]
+	
+	// for push and edit repo 
+	-> git push origin master // after add and commit
+	
+	// we can get update without pass and user 
+	-> git pull origin master 
