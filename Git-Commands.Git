@@ -69,3 +69,16 @@ Step 10 :
 	-> git push origin --tags
 	// for get oldest tags 
 	-> git checkout v1.8 // you can take a branch and edit this 
+-------------------------------------------------------------------
+# git blame
+	// you can find who work on lines of repositorys 
+	// and see who changes files line by line
+	-> git blame [file name] -L [line number ] 
+--------------------------------------------------------------------
+# bisect
+	// use bisect for find best release for project
+	-> git bisect start
+	-> git bisect bad
+	-> git bisect good 
+	-> git bisect [ release commit Work good]
+	
