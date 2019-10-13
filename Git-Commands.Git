@@ -58,3 +58,14 @@ Step 10 :
 	// we can get update without pass and user 
 	-> git pull origin master 
 
+-------------------------------------------------------------------
+
+# Tags
+	// use tags for Create V. of repository
+	-> git tag // show All tags
+	-> git tag -a [git versio] -m [comment] // use for current repository
+	-> git tag -a [git version][ name commit] // use for other commits
+	// for push tags
+	-> git push origin --tags
+	// for get oldest tags 
+	-> git checkout v1.8 // you can take a branch and edit this 
