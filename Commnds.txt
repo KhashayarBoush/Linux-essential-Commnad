@@ -394,7 +394,7 @@ yum install epel-release -y
   // and then install this packages
 yum install pv rsync git nc wget linx wget links aria2c nmap net-tools bind-utils
 telnet axel -y
-  // and install top ;ike programs
+  // and install top like programs
 yum install htop iotop iftop -y
   // and install some other apps
 yum install bc screen lsof -y
