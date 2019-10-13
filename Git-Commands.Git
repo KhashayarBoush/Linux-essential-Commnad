@@ -33,8 +33,8 @@ Step 7 :
 Step 8 : 
 	// Add A branch in Repositpory -----|->\ as tree 
 	-> git branch // show branchs
-	-> gir branch [ branch name ] 
-	// For change Branch 
+	-> git branch [ branch name ] 
+	// For switch to other  Branch 
 	-> git checkout [ branch name ] 
 
 Step 9 : 
@@ -57,3 +57,4 @@ Step 10 :
 	
 	// we can get update without pass and user 
 	-> git pull origin master 
+
