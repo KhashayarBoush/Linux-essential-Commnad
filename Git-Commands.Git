@@ -193,3 +193,4 @@ Step 10 :
 	// go back in master and then use this commnad
 	-> git stash apply 
 	// and show changed in master directory
+------------------------------------------------------------------------
