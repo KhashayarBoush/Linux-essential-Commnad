@@ -59,39 +59,60 @@ Step 10 :
 	
 	// we can get update without pass and user 
 	-> git pull origin master 
+	
+	// for rename the repo 
+	-> git remote rename [old name] [new name]
+
+
 
 -------------------------------------------------------------------
 
 # Tags
 	// use tags for Create V. of repository
 	-> git tag // show All tags
-	-> git tag -a [git versio] -m [comment] // use for current repository
-	-> git tag -a [git version][ name commit] // use for other commits
+	-> git tag -a [tag name] -m [massage] // use for current repository
+	-> git tag -a [tag name][ number of commit] // use for other commits
+	
 	// for push tags
-	-> git push origin --tags
+	-> git push origin --tags // upload all tag in one thread
+	git push [tag name] // for push one tag
+	 
 	// for get oldest tags 
 	-> git checkout v1.8 // you can take a branch and edit this 
+
+	// for create a short tag 
+	git tag [tag name]
+
+	// for delete a tag 
+	-> git tag -d [tag name]
 -------------------------------------------------------------------
+
 # git blame
 	// you can find who work on lines of repositorys 
 	// and see who changes files line by line
 	-> git blame [file name] -L [line number ] 
 --------------------------------------------------------------------
+
 # bisect
+
 	// use bisect for find best release for project
 	-> git bisect start
 	-> git bisect bad
 	-> git bisect good 
 	-> git bisect [ release commit Work good]
 ---------------------------------------------------------------------
+
 # create A server on Github With shell
 	// After Do Cerate a Directory and install git -> git init 
 	// create files and Fllow this step
 	-> git remote add origin [repo addr]
+	
 	// and push files on server 
 	-> git push origin master
 ----------------------------------------------------------------------
+
 # gitignore use for hidden files in repo and nobody cant accsess to files
+	
 	// for this action create a .gitignore in master Directory
 	// after do this Push files to server
 	// what you files hidden 
@@ -101,32 +122,40 @@ Step 10 :
 	-> vim .gitignore
 	-> git status
 	-> git push origin master
+	
 	// open the ignore files and save files name to hidden of repo
 	-> vim .gitignore
 	-> git push origin master
 -----------------------------------------------------------------------
+
 # Diff
 	// for compare with 2 commit use Diff commnad
 	-> git log 
+	
 	// use the last number of commit 
 	// and copy number of commit for compare
 	-> git diff [c1] .. [c2]	
 ------------------------------------------------------------------------
+
 # commit 
 	// for undo a commit use this step
 	-> git commitb--amend
 ------------------------------------------------------------------------
+
 # Reset 
 	// use this option for close file in add or staged moood
 	-> git reset HEAD [file name]
 ------------------------------------------------------------------------
+
 # checkout
 	// use checkout for cancel any changes in files
 	-> vim [file name] // edited file
 	-> git add [file name]
 	-> git commit [file name] -m "[commit massage]"
+	
 	// the you know tho add a commit to file
 	-> git commit --amend // for change commit massage
+	
 	// and for cancel any changes 
 	-> git checkout [file name]
 ------------------------------------------------------------------------
