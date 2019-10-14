@@ -159,3 +159,24 @@ Step 10 :
 	// and for cancel any changes 
 	-> git checkout [file name]
 ------------------------------------------------------------------------
+
+# branch
+	// for create and change to branch Shorter way
+	-> git branch -b [ branch name ] // create and switch to branch 
+	-> git branch -d [ branch name ] // for delete branch
+	
+	// if you create a branch and dot use this and dont merg with master 
+	// for delete this 
+	-> git branch -D [ branch name ] // localy delete branch
+	
+	// for show branch merged with master 
+	-> git branch --merged
+	
+	// for show branchs not merged with master
+	-> git branch --no-merged
+
+	// for delete a branch on server 
+	-> git push origin --delete [ branch name ]
+
+	// for upload a branch use 
+	-> git push origin [ branch name ]
