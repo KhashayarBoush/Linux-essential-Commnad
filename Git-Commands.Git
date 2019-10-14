@@ -179,4 +179,17 @@ Step 10 :
 	-> git push origin --delete [ branch name ]
 
 	// for upload a branch use 
-	-> git push origin [ branch name ]
+	-> git push origin [ branch name ] 
+------------------------------------------------------------------------
+
+# stash
+	// when you edit file in master 
+	// and you need to switch to other branch 
+	
+	// you can save state and switch to other branch with
+	-> git stash 
+	
+	// when you work is other branch is down
+	// go back in master and then use this commnad
+	-> git stash apply 
+	// and show changed in master directory
