@@ -43,7 +43,7 @@ Step 9 :
 	// switch To master  -> git checkou master
 	-> git merg [ branch name ] 
 	// when A branch Link to Master You Want to Delete them
-	-> gir branch -d [ branch name ]	
+	-> git branch -d [ branch name ]	
 
 Step 10 : 
 	// if you want to Delete a File 
