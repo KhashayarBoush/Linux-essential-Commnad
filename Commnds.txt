@@ -674,3 +674,10 @@ git branch -D [branch name ]
 ---------------------------------
   // for delete a branch after uploud that
 git push origin --delete [branch name]
+---------------------------------
+
+########################################################
+
+  // grep Command 
+	-> grep -i // search and show file name
+	-> grep -n -i // search and show line number and file name
